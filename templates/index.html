@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #dfddda;
+            color: #495057;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #28a745;
+        }
+
+        .author {
+            text-align: right;
+            margin-top: 30px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="text-center">Image Classifier</h1>
+
+    <form class="p-3 text-center" action='/' method="post" enctype="multipart/form-data">
+        <input class="form-control" type="file" name="imagefile">
+        <input class="btn btn-primary mt-3" type="submit" value="Predict Image">
+    </form>
+
+    {% if prediction %}
+        <p class="result text-center">Image is a {{prediction}} accuracy</p>
+    {% endif %}
+
+    <h4 class="author">By - Deepankar Kumar</h4>
+
+</body>
+</html>
