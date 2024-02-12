@@ -2,6 +2,7 @@ Flask
 gunicorn
 keras
 tensorflow
+PIL
 requests
 bs4
 html5lib
