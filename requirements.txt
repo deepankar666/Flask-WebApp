@@ -1,0 +1,8 @@
+Flask
+gunicorn
+keras
+tensorflow
+Pillow
+requests
+bs4
+html5lib
