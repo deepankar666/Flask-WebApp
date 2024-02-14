@@ -1,8 +1,8 @@
 Flask
 gunicorn
-tensorflow>=2.7.0
 keras
 Pillow
 requests
 bs4
 html5lib
+tensorflow
