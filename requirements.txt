@@ -5,4 +5,3 @@ Pillow
 requests
 bs4
 html5lib
-tensorflow==2.0
