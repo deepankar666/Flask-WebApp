@@ -1,5 +1,6 @@
 Flask
 gunicorn
+tensorflow
 keras
 Pillow
 requests
