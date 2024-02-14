@@ -1,7 +1,6 @@
 Flask
 gunicorn
 keras
-tensorflow
 Pillow
 requests
 bs4
